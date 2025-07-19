@@ -183,7 +183,7 @@ footer {
 }
 
 .product-text {
-  font-size: 1rem; /* <- Schriftgröße hier anpassen */
+  font-size: 12px; /* <- Schriftgröße hier anpassen */
   color: #444;
   line-height: 1.4;
 }
