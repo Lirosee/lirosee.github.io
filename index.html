@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lirosee – Willkommen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="intro-overlay" id="introOverlay">
+  <img src="images/logo.png" alt="Löwenlogo" class="intro-logo">
+</div>
+  <header>
+  <div class="header-container">
+  <div class="logo-container">
+
+      <div class="titelbox">
+  <img src="images/logo.png" class="logo-small mirrored">
+  <img src="images/LIROSEE.png" alt="LIROSEE Schriftzug" class="lirosee-bild">
+  <img src="images/logo.png" class="logo-small">
+</div>
+
+
+  <p class="subtitle">liro creations</p>
+    </div>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="ueber-mich.html">Über mich</a>
+    <a href="kontakt.html">Kontakt</a>
+    <a href="unterstuetzen.html">Unterstützung</a>
+    <a href="impressum.html">Impressum/ Datenschutz</a>
+  </nav>
+</header>
+
+<main>
+ <section class="intro">
+  <h2>Willkommen bei LIROSEE</h2>
+  <p>Ich freue mich, dass du meine kleine Welt besuchst.
+    Hier findest du handgefertigte Einzelstücke, die nach individuellen Vorstellungen gestaltet werden können.
+    Jedes Herzstück wird mit viel Liebe und Sorgfalt hergestellt.
+    
+    Auf dieser Startseite siehst du einige meiner aktuellen Kreationen und Angebote.
+    Mehr zu mir findest du auf der Seite "Über mich". 
+    Bei Fragen, Wünschen oder Aufträgen, kannst du gerne bei "Kontakt" vorbeischauen.
+  </p>
+</section>
+
+
+  <section class="product-gallery">
+    <div class="product">
+      <img src="images/aschenbecher_lung.jpg" alt="Harz-Aschenbecher">
+      <p class="product-text">
+        <strong>Harz – Aschenbecher in Lungenform</strong><br>
+        Personalisierbar – 22 €
+      </p>
+    </div>
+
+    <div class="product">
+      <img src="images/reaucherstaebchen.jpg" alt="Harz-Form">
+      <p class="product-text">
+        <strong>Harz - Räucherstäbchenhalterung</strong><br>
+        Personalisierbar – 18€
+      </p>
+    </div>
+
+    <div class="product">
+      <img src="images/aschenbecher_totenkopf.jpg" alt="Harz-Aschwnbecher">
+      <p class="product-text">
+        <strong>Harz - Aschenbecher in Totenkopfform</strong><br>
+        Personalisierbar – 28€
+      </p>
+    </div>
+  </section>
+</main>
+
+  <footer>
+
+    <div class="social-icons">
+  <a href="mailto:info.lirosee@gmail.com" target="_blank">
+    <img src="images/email.png" alt="E-Mail">
+  </a>
+  <a href="https://www.instagram.com/lirosee_info?igsh=MThmM3dtcWxwbnByZQ==" target="_blank">
+    <img src="images/instagram.png" alt="Instagram">
+  </a>
+  <a href="https://www.kleinanzeigen.de/s-bestandsliste.html?userId=152534999&fbclid=PAQ0xDSwLYj5xleHRuA2FlbQIxMQABp-KVkhp8Uf5PQklTWmNA745cl4axRe1uaglcZYzvhEpNxIA3U7gkUFM4U4AW_aem_eme3ywq2Dl7YXdxhU0YGSA" target="_blank">
+    <img src="images/ebay.png" alt="Kleinanzeigen">
+  </a>
+</div>
+
+<p class="footer-copy">&copy; 2025 Lirosee</p>
+
+  </footer>
+  <script>
+  // Blendet das Intro nach der Animation komplett aus dem DOM aus
+  setTimeout(function() {
+    document.getElementById('introOverlay').style.display = 'none';
+  }, 2000); // Nach 4 Sekunden (2s Animation + 2s Sichtbar)
+</script>
+</body>
+</html>

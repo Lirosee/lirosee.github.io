@@ -1,0 +1,398 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Quicksand:wght@400;600&display=swap'); 
+
+:root {
+  --main-lilac: #b1a8b6; /* sanfter Lilaton */
+  --main-beige: #86768e;
+  --dark-brown: #3c2a2a;
+  --accent-gray: #a29790;
+}
+
+
+body {
+ 
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--dark-brown);
+  background: linear-gradient(to left, var(--main-beige) 0%, #f7f2ef 50%, var(--main-beige) 100%);
+
+  .intro-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #a29790; /* gleiche Farbe wie dein Header */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeOut 1s ease 1s forwards; /* Blendet es nach 2 Sekunden aus */
+}
+
+.intro-logo {
+  width: 300px;
+  animation: logoZoom 2s ease;
+}
+
+@keyframes logoZoom {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+  
+  font-family: 'Quicksand', sans-serif;
+  background-color: #f7f2ef;
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-beige);
+  color: var(--dark-brown);
+}
+
+header {
+
+  background-color: var(--accent-gray); /* Lila */
+  color: white;
+  padding: 10px 20px 20px 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+}
+.branding h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 120px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin: 10px 0 0 0;
+  color: #eeeae7; /* Hier kannst du die Farbe ändern */
+}
+
+.logo {
+  width: 400px; /* falls du es größer möchtest: z.B. 100px */
+  margin-top: 20px;  /* war vorher wahrscheinlich 0 */
+  margin-bottom: -10px;  /* das zieht es näher an LIROSEE */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subtitle {
+  font-size: 80px;
+  margin-top: -10px;
+  color: #c9c4ca; /* Zarter Lila-Ton – kannst du ändern */
+  font-weight: 400;
+  text-align: center;
+}
+nav {
+
+  border-top: 1px solid #e0dad6;
+  padding-top: 30px;
+  margin-top: 30px;
+}
+
+nav a {
+  margin: 0 30px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.intro h2 {
+  font-size: 32px;
+  color: var(--dark-brown);
+  margin-bottom: 10px;
+}
+
+.intro p {
+  font-size: 18px;
+  color: #5c4b43;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+footer {
+  
+  background-color: var(--accent-gray); /* Braun */
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  margin-top: 50px;
+}
+/* Produktgalerie */
+.product-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin: 50px 20px;
+}
+
+.product {
+  background-color: #d9d4d1;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.product:hover {
+  transform: scale(1.03);
+}
+
+.product img {
+  max-width: 200px; /* <- Hier kannst du die Bildgröße ändern */
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-text {
+  font-size: 1rem; /* <- Schriftgröße hier anpassen */
+  color: #444;
+  line-height: 1.4;
+}
+
+main {
+  
+  border-left: 3px solid var(--main-lilac);
+  border-right: 3px solid var(--main-lilac);
+  padding: 40px 30px;
+  max-width: 1000px;
+  margin: auto;
+  background-color: #ffffffbb;
+  border-radius: 8px;
+}
+
+.lirosee-bild {
+  width: 400px; /* oder z. B. 200px, je nachdem wie groß du willst */
+  max-width: 100%;
+  display: block;
+  margin: 0 auto; /* zentriert + Abstand nach unten */
+}
+
+.titelbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  flex-wrap: nowrap;
+  width: fit-content;
+  max-width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.logo-small {
+  width: 200px;
+  height: auto;
+}
+
+.mirrored {
+  transform: scaleX(-1);
+}
+
+.subtitle {
+  font-size: 24px;
+  color: #eeeae7;
+  text-align: center;
+  margin-top: -10px;
+}
+.social-icons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.social-icons img {
+  width: 50px; /* Größe der Icons */
+  height: auto;
+  opacity: 0.8;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icons img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.footer-copy {
+  margin-top: 40px;
+  color: black;
+  font-size: 15px;
+}
+
+.ueber-mich {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-size: 18px;
+  color: #3c2a2a;
+}
+
+.ueber-mich h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: var(--dark-brown);
+}
+
+.ueber-mich p {
+  margin-bottom: 20px;
+}
+
+.paypal-button {
+  display: inline-block;
+  padding: 14px 32px;
+  background-color: var(--main-beige);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 30px;
+}
+
+.paypal-button:hover {
+  background-color: #a58fab;
+  transform: scale(1.05);
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Abstand zwischen den Buttons */
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.kontakt-button {
+  padding: 14px 32px;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Einzelne Farbvarianten */
+.email-button {
+  background-color: #86768e; /* dein Akzentlila */
+}
+
+.email-button:hover {
+  background-color: #6d5e76;
+  transform: scale(1.05);
+}
+
+.insta-button {
+  background-color: #86768e; /* hübsches Rosa wie Instagram */
+}
+
+.insta-button:hover {
+  background-color: #6d5e76;
+  transform: scale(1.05);
+}
+
+
+.ueber-mich-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px;
+}
+
+.ueber-mich-text {
+  flex: 1 1 500px;
+  max-width: 600px;
+}
+
+.ueber-mich-bild img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.ueber-mich-bild img:hover {
+  transform: scale(1.03);
+}
+
+
+
+.portrait-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+
+
+.portrait-bild:hover {
+  transform: scale(1.03);
+}
+
+
+.bild-mit-kasten {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d9d4d1;
+  border-radius: 30px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  margin: 40px auto;
+  max-width: fit-content;
+}
+
+.portrait-bild {
+  max-width: 280px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
