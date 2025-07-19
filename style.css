@@ -400,6 +400,6 @@ main {
 
 @media (max-width: 600px) {
   .product-text {
-    font-size: 12px; /* oder 14px – je nachdem wie klein es sein soll */
+    font-size: 10px; /* oder 14px – je nachdem wie klein es sein soll */
   }
 }
