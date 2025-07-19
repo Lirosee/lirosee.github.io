@@ -396,3 +396,10 @@ main {
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
+
+@media (max-width: 600px) {
+  .product-text {
+    font-size: 12px; /* oder 14px – je nachdem wie klein es sein soll */
+  }
+}
