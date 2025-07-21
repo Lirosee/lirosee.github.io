@@ -283,11 +283,11 @@ main {
 
 .paypal-button {
   display: inline-block;
-  padding: 14px 32px;
+  padding: 18px 40px;
   background-color: var(--main-beige);
   color: #ffffff;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 20px;
   border-radius: 12px;
   text-decoration: none;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -309,9 +309,9 @@ main {
 }
 
 .kontakt-button {
-  padding: 14px 32px;
+  padding: 18px 40px;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 20px;
   border-radius: 12px;
   text-decoration: none;
   color: white;
