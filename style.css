@@ -1909,3 +1909,66 @@ main {
     font-size: 28px;
   }
 }
+
+/* =========================
+   TOUCH-GERAETE / DESKTOP-ANSICHT AM HANDY
+   Fix fuer Leistungen + Produkte
+   ========================= */
+
+@media (hover: none) and (pointer: coarse) {
+
+  .leistungen-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+
+  .leistung-card {
+    max-width: 520px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 18px 16px 20px 16px;
+    min-width: 0;
+  }
+
+  .leistung-img img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .leistung-text,
+  .leistung-list,
+  .leistung-card h3,
+  .product-text {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .leistung-list {
+    max-width: 100%;
+    padding-left: 18px;
+  }
+
+  .product-gallery {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 16px;
+    margin: 20px 10px;
+  }
+
+  .product {
+    min-width: 0;
+    padding: 12px;
+  }
+
+  .product img,
+  .image-switch {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .info-pop {
+    width: min(200px, calc(100vw - 40px));
+    right: 8px;
+  }
+}
