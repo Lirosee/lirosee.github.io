@@ -1972,3 +1972,69 @@ main {
     right: 8px;
   }
 }
+
+
+.booking-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.booking-section h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--dark-brown);
+}
+
+/* Grid Layout */
+.booking-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+/* Karte = Button + Inhalt */
+.booking-card {
+  display: block;
+  background: #d9d4d1;
+  border-radius: 18px;
+  padding: 20px;
+  text-decoration: none;
+  color: var(--dark-brown);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.10);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.booking-card:hover {
+  transform: scale(1.03);
+  background: #e2ddd9;
+}
+
+/* Titel */
+.booking-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* Beschreibung */
+.booking-text {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #5c4b43;
+}
+
+/* Meta Info */
+.booking-meta {
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .booking-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
