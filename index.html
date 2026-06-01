@@ -20,6 +20,42 @@
 
 </head>
 <body>
+  <div id="cookie-banner" style="
+position: fixed;
+bottom: 0;
+left: 0;
+right: 0;
+background: #3c332a;
+color: white;
+padding: 15px;
+text-align: center;
+z-index: 99999;
+font-size: 14px;
+">
+Diese Website verwendet Cookies zur Analyse mit Google Analytics.
+<a href="datenschutz.html" style="color:#d9d4d1;">Mehr erfahren</a>
+
+<button onclick="acceptCookies()" style="
+margin-left: 15px;
+padding: 8px 14px;
+border: none;
+background: #d9d4d1;
+cursor: pointer;
+border-radius: 8px;
+">
+Akzeptieren
+</button>
+</div>
+
+<script>
+function acceptCookies() {
+  localStorage.setItem('cookiesAccepted', 'true');
+  document.getElementById('cookie-banner').style.display = 'none';
+}
+if (localStorage.getItem('cookiesAccepted')) {
+  document.getElementById('cookie-banner').style.display = 'none';
+}
+</script>
   <div class="intro-overlay" id="introOverlay">
   <img src="images/logo.png" alt="Löwenlogo" class="intro-logo">
 </div>
